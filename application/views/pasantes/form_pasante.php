@@ -1,34 +1,34 @@
 <form action="<?= base_url("pasantes/guardar")?>" method="post">
     <div class="form-group">
         <label for="nombre">Cedula</label>
-        <input type="text" class="form-control" name="cedula" id="cedula" placeholder="Cedula">
+        <input type="text" class="form-control" name="cedula" id="cedula" placeholder="Cedula" required>
     </div>
     <div class="form-group">
         <label for="nombre">Nombres</label>
-        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
+        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" required>
     </div>
     <div class="form-group">
         <label for="nombre">Paterno</label>
-        <input type="text" class="form-control" name="paterno" id="paterno" placeholder="Paterno">
+        <input type="text" class="form-control" name="paterno" id="paterno" placeholder="Paterno" required>
     </div>
     <div class="form-group">
         <label for="nombre">Materno</label>
-        <input type="text" class="form-control" name="materno" id="materno" placeholder="Materno">
+        <input type="text" class="form-control" name="materno" id="materno" placeholder="Materno" required>
     </div>
     <div class="form-group">
         <label for="nombre">Registro Universitario</label>
-        <input type="text" class="form-control" name="ru" id="ru" placeholder="Registro Universitario">
+        <input type="text" class="form-control" name="ru" id="ru" placeholder="Registro Universitario" required>
     </div>
     <div class="form-group">
         <label for="nombre">Celular</label>
-        <input type="text" class="form-control" name="celular" id="celular" placeholder="celular">
+        <input type="text" class="form-control" name="celular" id="celular" placeholder="celular" required>
     </div>
     <div class="row">
 
         <div class="col-sm-6">
             <div class="form-group">
                 <label>AREA</label>
-                <select class="form-control" name="area">
+                <select class="form-control" name="area" >
                     <?php foreach ($area as $row): ?>
                         <option value="<?= $row->id_area?>"><?= $row->area?></option>
                     <?php endforeach?>
@@ -38,7 +38,7 @@
         <div class="col-sm-6">
             <div class="form-group" name="turno">
                 <label>TURNO</label>
-                <select class="form-control" name="turno">
+                <select class="form-control" name="turno" >
                     <?php foreach($turno as $row): ?>
                         <option value="<?= $row->id_turno?>"><?= $row->turno?></option>
                     <?php endforeach ?>
@@ -48,7 +48,7 @@
         <div class="col-sm-6">
             <div class="form-group">
                 <label>GESTION</label>
-                <select class="form-control" name="gestion">
+                <select class="form-control" name="gestion" >
                     <?php foreach ($gestion as $row): ?>
                         <option value="<?= $row->id_gestion?>"><?= $row->gestion?></option>
                     <?php endforeach?>

@@ -48,20 +48,6 @@
               <span class="badge badge-info right"></span>
             </p>
           </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="<?= base_url(); ?>pasantes/crear" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Registrar</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="<?= base_url(); ?>pasantes/index" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>listar</p>
-              </a>
-            </li>
-          </ul>
         </li>
         <li class="nav-item has-treeview">
           <a href="<?= base_url(); ?>pasantes/registro" class="nav-link">
@@ -82,27 +68,9 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="../UI/general.html" class="nav-link">
+              <a href="<?= base_url(); ?>area/index" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Guardar</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="../UI/icons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Actualizar</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="../UI/buttons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Editar</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="../UI/sliders.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Borrar</p>
+                <p>Cargos</p>
               </a>
             </li>
           </ul>
@@ -117,27 +85,15 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="../forms/general.html" class="nav-link">
+              <a href=" #" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Guardar</p>
+                <p>Semanal</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="../forms/advanced.html" class="nav-link">
+              <a href="#" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Actualizar</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="../forms/editors.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Editar</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="../forms/validation.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Borrar</p>
+                <p>Mensual</p>
               </a>
             </li>
           </ul>

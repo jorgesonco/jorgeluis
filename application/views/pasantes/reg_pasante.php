@@ -24,7 +24,7 @@
               <th>AREA</th>
               <th>TURNO</th>
               <th>GESTION</th>
-              <th> E y E </th>
+              <th> ACCIONES </th>
             </tr>
           </thead>
           <tbody><?php $i=0; ?>
@@ -42,13 +42,8 @@
                 <td><?= $row->gestion ?></td>
                 <td>
                   <div class="btn-group">
-                    <script type="text/javascript">
-                      function confirm_delete() {
-                        return confirm('are you sure?');
-                      }
-                    </script>
                     <a href="<?= base_url() ?>pasantes/editar/<?= $row->id_pasante ?>" class="btn btn-warning btn-sm"><i class="fas fa-pen text-white"></i></a>
-                    <a href="<?= base_url() ?>pasantes/elimina/<?= $row->id_pasante ?>" onclick="return confirm_delete()" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
+                    <a href="<?= base_url() ?>pasantes/elimina/<?= $row->id_pasante ?>" onclick="return confirm(&quot;Esta seguro de eliminar? delete?&quot;)" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
 
                   </div>
                 </td>

@@ -14,6 +14,7 @@ class Pasantes_model extends CI_Model {
       return $this->db->get('view_pasante')->result();
       
    }
+   ///
    public function listar_area()
    {
       return $this->db->get('area')->result();
@@ -26,13 +27,11 @@ class Pasantes_model extends CI_Model {
    {
       return $this->db->get('turno')->result();
    }
-
+   /////
    public function eliminar($id)
    {
       $this->db->where('id_pasante', $id);
       return $this->db->delete('pasante');
-      
-      
    }
    public function editar($id)
    {
